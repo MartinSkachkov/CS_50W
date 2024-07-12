@@ -1,0 +1,106 @@
+.navbar {
+    list-style-type: none;     /* Remove bullets */
+    padding: 10px;             /* Remove default padding */
+    margin: 0px;               /* Remove default margin */
+    display: flex;             /* Align items in a row */
+    justify-content: flex-end; /* Align to the right */
+}
+
+.navbar li {
+    margin-right: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+}
+
+.navbar a {
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* unvisited link */
+.navbar a:link {
+    color: black;
+  }
+  
+/* visited link */
+.navbar a:visited {
+    color: black;
+}
+  
+/* mouse over link */
+.navbar a:hover {
+    color: black;
+}
+  
+/* selected link */
+.navbar a:active {
+    color: black;
+}
+
+/*---------------------------------------------*/
+
+.logo {
+    max-width: 100%;      /* Ensures the image does not exceed its original size */
+    height: auto;         /* Allows the image to maintain its aspect ratio proportionally to the width*/
+    width: 350px;         /* Initial width of the image */
+    margin-bottom: 20px;  /* Adds spacing between the logo and search bar */
+}
+
+@media (max-width: 600px) {
+    .logo, .rounded-input {
+        width: 40%; /* Shrink the image and the search bar with 40% from their current width */
+    }
+}
+
+@media (max-width: 400px) {
+    .logo, .rounded-input {
+        width: 60%; /* Shrink the image and the search bar with 60% from their current width */
+    }
+}
+
+.center-logo, .center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-input {
+    display: flex;
+    z-index: 3;
+    position: relative;
+    min-height: 44px;
+    background: #ffffff;
+    border: 1px solid #585353;
+    box-shadow: none;
+    border-radius: 24px;
+    margin: 0 auto;
+    width: 638px;
+    width: 584px;
+    max-width: 1000px;
+}
+
+/*---------------------------------------------*/
+
+.button {
+    background-color: #e0dcdc;
+    border: 1px solid #9e9fa1;
+    border-radius: 4px;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 8px;
+    margin-top: 20px;
+}
+
+/*---------------------------------------------*/
+
+.container {
+    margin-top: 180px;
+}
