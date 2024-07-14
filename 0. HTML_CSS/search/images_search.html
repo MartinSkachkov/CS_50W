@@ -1,16 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Search</title>
+        <title>Image Search</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <!-- Top-right link for google search -->
         <div>
             <ul class="navbar">
                 <li><a href="index.html">Google Search</a></li>
             </ul>
         </div>
-        <a href="https://images.google.com/">Images</a>
-         
+
+        <!-- Logo & Search Bar -->
+        <div class="container-images">
+
+            <!-- Logo -->
+            <div class="center-logo">
+                <img src="Images_logo.webp" alt="Images_logo_png" class="logo">
+            </div>
+
+            <!-- Search Bar -->
+            <form action="https://google.com/search"> 
+                <input type="text" name="q" class="rounded-input">
+                <input type="hidden" name="tbm" value="isch">       <!-- text added automatically to the url needed to perform image search -->
+
+                <div class="center-buttons">
+                    <input type="submit" value="Image Search" class="button">
+                </div>
+            </form>
+
+        </div>
     </body>
 </html>

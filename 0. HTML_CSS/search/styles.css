@@ -1,3 +1,4 @@
+/*----------------------NAVBAR-----------------------*/
 .navbar {
     list-style-type: none;     /* Remove bullets */
     padding: 10px;             /* Remove default padding */
@@ -36,7 +37,7 @@
     color: black;
 }
 
-/*---------------------------------------------*/
+/*----------------------Logo&SearchBar-----------------------*/
 
 .logo {
     max-width: 100%;      /* Ensures the image does not exceed its original size */
@@ -52,8 +53,12 @@
 }
 
 @media (max-width: 400px) {
-    .logo, .rounded-input {
+    .logo {
         width: 60%; /* Shrink the image and the search bar with 60% from their current width */
+    }
+
+    .rounded-input {
+        width: 200px;
     }
 }
 
@@ -73,12 +78,11 @@
     box-shadow: none;
     border-radius: 24px;
     margin: 0 auto;
-    width: 638px;
     width: 584px;
     max-width: 1000px;
 }
 
-/*---------------------------------------------*/
+/*----------------------BUTTONS-----------------------*/
 
 .button {
     background-color: #e0dcdc;
@@ -99,8 +103,77 @@
     margin-top: 20px;
 }
 
-/*---------------------------------------------*/
+/*----------------------CONTAINERS-----------------------*/
 
 .container {
     margin-top: 180px;
+}
+
+.container-images{
+    margin-top: 150px;
+}
+
+/*----------------------ADVANCED-----------------------*/
+
+.advanced-logo{
+    display: flex;
+    height: 24px;
+    width: 74px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+}
+
+#h-advanced {
+    color: #d93025;
+    font-size: 22px;
+    font-family: Arial, sans-serif;
+    margin: 35px 35px;
+}
+
+hr {
+    color: gray;
+}
+
+.side-header {
+    color: black;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+.div-advanced {
+    margin: 50px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left {
+    margin-left: 15px;
+    width: 200px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    vertical-align: middle;
+}
+
+.form-control {
+    width: 500px;
+    height: 30px;
+}
+
+.adv-button {
+    background: #8ab4f8;
+    border-color: #8ab4f8;
+    color: #202124;
+}
+
+.btn-div {
+    display: flex;
+    justify-content: flex-end;
+    width: 700px;
+    margin-top: 20px;
 }
