@@ -1,8 +1,8 @@
-# CS50 Project - Google Search
+# [CS50 Project - Google Search](https://martinskachkov.github.io/Google_Clone/images_search.html)
 
 ## Overview of the First Assignment: CSS, HTML, and SASS
 
-A quick overview of the first assignment of CS50 Web Programming: a simple clone of Google Search, Google Image Search, and Google Advanced Search purely made with HTML and SCSS.
+A quick overview of the first assignment of CS50 Web Programming: a simple clone of Google Search, Google Image Search, and Google Advanced Search purely made with HTML and SCSS. Click the hyperlink to try it.
 
 ## Assignment Specification
 
