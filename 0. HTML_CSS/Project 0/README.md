@@ -1,4 +1,4 @@
-# [CS50 Project - Google Search](https://martinskachkov.github.io/Google_Clone/images_search.html)
+# [CS50 Project - Google Search](https://martinskachkov.github.io/Google_Clone/index.html)
 
 ## Overview of the First Assignment: CSS, HTML, and SASS
 
