@@ -1,0 +1,17 @@
+{% load static %} <!-- load the static files -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Is it New Year's?</title>
+        <link rel="stylesheet" href="{% static 'newyear/styles.css' %}"> <!-- automatically determine the path to the file from the static folder -->
+    </head>
+    <body>
+        <!-- CONDITIONS INSIDE DJANGO TEMPLATES -->
+        {% if newyear %}
+            <h1>YES</h1>
+        {% else %}
+            <h1>NO</h1>
+        {% endif %}
+    </body>
+</html>
