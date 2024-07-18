@@ -1,0 +1,14 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+    <h1>To Do List</h1>
+    <ul>
+        {% for task in tasks %}
+            <li>{{ task }}</li>
+        {% empty %}
+            <li>No Tasks</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'tasks:add' %}">Add Task</a> <!-- gets the url from urls.py file of tasks app where the keyword is add -->
+{% endblock %}

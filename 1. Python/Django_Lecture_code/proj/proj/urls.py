@@ -21,5 +21,6 @@ from django.urls import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', include("hello.urls")), # go to the hello application and include all the urls in hello/urls.py
-    path('newyear/', include("newyear.urls"))
+    path('newyear/', include("newyear.urls")),
+    path('tasks/', include("tasks.urls"))
 ]

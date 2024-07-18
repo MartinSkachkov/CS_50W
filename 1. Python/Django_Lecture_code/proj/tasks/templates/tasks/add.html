@@ -1,0 +1,15 @@
+{% extends "tasks/layout.html" %}
+
+{% block body %}
+    <h1>Add Task</h1>
+    <!-- when the submit button is clicked redirect to the tasks/add page and send the entered input(post) -->
+    <!-- the loading of tasks/add page will cause the execution of views.add function --> 
+    <form action="{% url 'tasks:add' %}" method="post"> 
+        {% csrf_token %}
+        <!-- <input type="text" name="task"> -->
+        {{ form }}
+        <input type="submit">
+    </form>
+
+    <a href="{% url 'tasks:index' %}">See the list</a>
+{% endblock %}
