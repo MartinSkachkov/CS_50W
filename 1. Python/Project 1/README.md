@@ -1,10 +1,10 @@
 # CS50 Project - Wiki
 
-### Overview of the Second Assignment: Python and Django
+## Overview of the Second Assignment: Python and Django
 
 The aim of this project was to build a Wikipedia-like online encyclopedia using the Python Django framework. Users can view available article entries, as well as search for entries on the site. New entries can be created by users, and existing entries can be edited. There is also a 'random page' function that selects and displays a page of the encyclopedia at random.
 
-### Technologies:
+## Technologies:
 
 - Back-end:
 
@@ -15,7 +15,7 @@ The aim of this project was to build a Wikipedia-like online encyclopedia using 
   - HTML (with Django templating)
   - CSS (with some Bootstrap Components)
 
-### Assignment Specification:
+## Assignment Specification:
 
 - Entry Page: Visiting /wiki/TITLE, where TITLE is the title of an encyclopedia entry, should render a page that displays the contents of that encyclopedia entry.
   - The view should get the content of the encyclopedia entry by calling the appropriate util function.
@@ -38,7 +38,7 @@ The aim of this project was to build a Wikipedia-like online encyclopedia using 
 - Random Page: Clicking “Random Page” in the sidebar should take user to a random encyclopedia entry.
 - Markdown to HTML Conversion: On each entry’s page, any Markdown content in the entry file should be converted to HTML before being displayed to the user. You may use the python-markdown2 package to perform this conversion, installable via pip3 install markdown2.
 
-### Project Writeup:
+## Project Writeup:
 
 This project is a Wikipedia style encyclopedia website called Qwikipedia, built using the Django web framework.
 
