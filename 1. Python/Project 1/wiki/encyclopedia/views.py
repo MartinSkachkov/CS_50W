@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponse
 from markdown2 import Markdown
 from . import util
+import random
 
 def convert_md_to_html(title):
     content = util.get_entry(title) # loads the content of the page by the given title
@@ -46,3 +48,40 @@ def search(request):
         else:
             recommended = recommendation(entry_search)
             return render(request, "encyclopedia/recommended.html", {"recommended": recommended})
+
+def new_page(request):
+    if request.method == "GET":
+        return render(request, "encyclopedia/new.html")
+    elif request.method == "POST":
+        title = request.POST['title']
+        content = request.POST['content']
+
+        if util.get_entry(title.lower()) is not None: #this page already exists
+           return render(request, "encyclopedia/error.html", {"err_msg": "This entry already exists!"})
+        else:
+            util.save_entry(title, content)
+            html_content = convert_md_to_html(title)
+            return render(request, "encyclopedia/entry.html", {"title": title, "content": html_content})
+        
+def edit(request):
+    if request.method == "POST":
+        title = request.POST['entry_title']
+        md_content = util.get_entry(title)
+
+        return render(request, "encyclopedia/edit.html", {"title": title, "content": md_content})
+    else:
+        return render(request, "encyclopedia/error.html", {"err_msg": "Error during the edit page process!"})
+    
+def save_edit(request):
+    if request.method == "POST":
+        title = request.POST['new_title']
+        content = request.POST['new_content']
+
+        util.save_entry(title, content)
+        html_content = convert_md_to_html(title)
+        return render(request, "encyclopedia/entry.html", {"title": title, "content": html_content})
+    
+def random_page(request):
+    random_title = random.choice(util.list_entries())
+    random_html_content = convert_md_to_html(random_title)
+    return render(request, "encyclopedia/entry.html", {"title": random_title, "content": random_html_content})
