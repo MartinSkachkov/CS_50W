@@ -36,3 +36,12 @@ textarea {
 .sidebar h2 {
     margin-top: 5px;
 }
+
+.button-container {
+    display: flex;
+    gap: 20px; /* Adjust the spacing between the buttons if needed */
+}
+
+.inline-form {
+    margin: 0; /* Removes default margin to keep buttons aligned */
+}

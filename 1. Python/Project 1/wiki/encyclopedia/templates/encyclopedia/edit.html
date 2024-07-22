@@ -18,6 +18,13 @@
 
         <textarea rows="4" cols="20" name="new_content">{{ content }}</textarea>
         <br/>
-        <input type="submit" value="Modify" class="btn btn-primary">
+
+        <div class="button-container">
+            <input type="submit" value="Modify" class="btn btn-warning">
+            <form action="{% url 'entry' title=title %}" method="POST" class="inline-form">
+                {% csrf_token %}
+                <input type="submit" value="Cancel" class="btn btn-danger">
+            </form>
+        </div>
     </form>
 {% endblock %}
