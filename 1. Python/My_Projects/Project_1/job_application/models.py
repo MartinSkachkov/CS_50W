@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create database table.
+# Create database table called Form.
 class Form(models.Model):
     first_name = models.CharField(max_length=80)
     last_name = models.CharField(max_length=80)
