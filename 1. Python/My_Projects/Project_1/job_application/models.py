@@ -7,6 +7,7 @@ class Form(models.Model):
     email = models.EmailField()
     date = models.DateField()
     occupation = models.CharField(max_length=80)
+    resume = models.FileField(upload_to='resumes/pdfs/')
 
     # __str__ method in a class is a special method that is used to define the "informal" or
     # nicely printable string representation of an instance of that class (p=Person() print(p))
