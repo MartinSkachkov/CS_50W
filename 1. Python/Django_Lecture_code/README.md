@@ -55,8 +55,6 @@ class MyModel(models.Model):
 
 ```
 
-Генериран от ИИ код. Прегледайте и използвайте внимателно. [Повече информация за ЧЗВ](https://www.bing.com/new#faq).
-
 ## 5. Migrate the Database
 
 Create and apply migrations to reflect changes in your models to the database:
@@ -83,8 +81,6 @@ def my_view(request):
 
 ```
 
-Генериран от ИИ код. Прегледайте и използвайте внимателно. [Повече информация за ЧЗВ](https://www.bing.com/new#faq).
-
 ### b. Templates
 
 Create HTML templates for your views. Templates are stored in the `templates` directory within your app:
@@ -104,8 +100,6 @@ HTML
 </html>
 ```
 
-Генериран от ИИ код. Прегледайте и използвайте внимателно. [Повече информация за ЧЗВ](https://www.bing.com/new#faq).
-
 ### c. URL Routing
 
 Map views to URLs in your app’s `urls.py`:
@@ -121,8 +115,6 @@ urlpatterns = [
 ]
 
 ```
-
-Генериран от ИИ код. Прегледайте и използвайте внимателно. [Повече информация за ЧЗВ](https://www.bing.com/new#faq).
 
 ## 7. Static Files and Media
 
@@ -149,8 +141,6 @@ class MyModelTest(TestCase):
         self.assertEqual(str(instance), instance.name)
 
 ```
-
-Генериран от ИИ код. Прегледайте и използвайте внимателно. [Повече информация за ЧЗВ](https://www.bing.com/new#faq).
 
 Run tests with:
 
