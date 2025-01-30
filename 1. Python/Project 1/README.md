@@ -1,6 +1,4 @@
-# CS50 Project - Wiki
-
-## Overview of the Second Assignment: Python and Django
+# [CS50 Project - Wiki](https://cs50.harvard.edu/web/2020/projects/1/wiki/)
 
 The aim of this project was to build a Wikipedia-like online encyclopedia using the Python Django framework. Users can view available article entries, as well as search for entries on the site. New entries can be created by users, and existing entries can be edited. There is also a 'random page' function that selects and displays a page of the encyclopedia at random.
 
